@@ -53,6 +53,7 @@ ambev-sales-analytics/
 ├── queries_analise.sql         # Consultas SQL analíticas para suporte à decisão
 ├── dashboard_vendas_ambev.pbix # Arquivo oficial do relatório interativo em Power BI
 └── README.md                   # Documentação detalhada do projeto
+![Dashboard Power BI Executivo](printdashboard.png)
 🚀 Como Executar o Projeto
 Se você quiser reproduzir ou testar o ambiente localmente:
 
