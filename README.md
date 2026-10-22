@@ -54,6 +54,8 @@ ambev-sales-analytics/
 ├── dashboard_vendas_ambev.pbix # Arquivo oficial do relatório interativo em Power BI
 └── README.md                   # Documentação detalhada do projeto
 
+# Documentação detalhada do projeto
+
 ![Dashboard Power BI Executivo](printdashboard.png)
 
 🚀 Como Executar o Projeto
