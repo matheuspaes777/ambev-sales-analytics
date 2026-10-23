@@ -1,100 +1,94 @@
 # 🍺 Sales & Distribution Analytics — AmBev Style
 
-![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=sqlite&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+---
+
+## 🎯 About the Project
+
+This repository presents a complete **Data Analytics and Business Intelligence** solution inspired by the sales, logistics, and distribution processes of the beverage industry (AmBev style).
+
+The project was structured to demonstrate an **End-to-End Data Pipeline**, covering everything from programmatic data engineering and synthesis to delivering value for executive decision-making.
 
 ---
 
-## 🎯 Sobre o Projeto
-Este repositório apresenta uma solução completa de **Análise de Dados e Business Intelligence** inspirada nos processos de vendas, logística e distribuição do setor de bebidas (estilo AmBev). 
-
-O projeto foi estruturado para demonstrar um **Pipeline de Dados End-to-End**, cobrindo desde a engenharia e síntese de dados programática até a entrega de valor para a tomada de decisão executiva.
-
----
-
-## 🏗️ Arquitetura do Pipeline de Dados
+## 🏗️ Data Pipeline Architecture
 
 ```text
 ┌─────────────────────────┐         ┌──────────────────────────┐         ┌─────────────────────────┐
-│      Script Python      │  ───►   │   Base de Dados (CSV)    │  ───►   │   Dashboard Power BI    │
-│  (Geração & Simulação)  │         │   & Consultas SQL        │         │   (KPIs & Insights)     │
+│      Python Script      │  ───►   │     Database (CSV)       │  ───►   │   Power BI Dashboard    │
+│ (Generation & Simulation)│        │   & SQL Queries          │         │    (KPIs & Insights)    │
 └─────────────────────────┘         └──────────────────────────┘         └─────────────────────────┘
 
 ```
 
-### 🛠️ Stack Tecnológica
+### 🛠️ Tech Stack
 
-* **Python 3.13 (Pandas, NumPy):** Automação da geração de massa de dados realista, aplicando regras de negócio, sazonalidade, preços unitários e volumetria.
-* **SQL:** Desenvolvimento de consultas analíticas avançadas (`GROUP BY`, agregações, subqueries e funções de janela) para extração de indicadores de desempenho.
-* **Power BI Desktop:** Modelagem de dados, tratamento visual e construção de um dashboard executivo focado em usabilidade e design limpo.
-* **Git & GitHub:** Versionamento de código e documentação técnica padronizada.
-
----
-
-## 📊 Principais Indicadores e Métricas (KPIs)
-
-O painel gerencial consolida as principais métricas operacionais e financeiras da operação:
-
-* 💰 **Faturamento Total:** R$ 15,56 Mi
-* 📦 **Volume Total Comercializado:** 255 Mil unidades
-* 🎟️ **Ticket Médio por Pedido:** R$ 15,56 Mil
-* 🗺️ **Segmentação por Região:** Análise de performance e penetração de mercado nas regiões Sul, Sudeste, Centro-Oeste e Nordeste.
-* 🏪 **Análise por Canal de Venda:** Comparativo de eficiência entre Supermercados, Distribuidores, Bares/Restaurantes e Lojas de Conveniência.
+* **Python 3.13 (Pandas, NumPy):** Automation of realistic synthetic data generation, applying business rules, seasonality, unit prices, and volume metrics.
+* **SQL:** Development of advanced analytical queries (`GROUP BY`, aggregations, subqueries, and window functions) to extract key performance indicators.
+* **Power BI Desktop:** Data modeling, visual formatting, and construction of an executive dashboard focused on usability and clean design.
+* **Git & GitHub:** Code versioning and standardized technical documentation.
 
 ---
 
-## 🖥️ Preview do Dashboard Executivo
+## 📊 Key Performance Indicators (KPIs)
+
+The management dashboard consolidates the main operational and financial metrics of the operation:
+
+* 💰 **Total Revenue:** R$ 15.56M
+* 📦 **Total Volume Sold:** 255k units
+* 🎟️ **Average Order Value (AOV):** R$ 15.56k
+* 🗺️ **Segmentation by Region:** Performance and market penetration analysis across the South, Southeast, Midwest, and Northeast regions.
+* 🏪 **Sales Channel Analysis:** Comparative efficiency analysis between Supermarkets, Distributors, Bars/Restaurants, and Convenience Stores.
 
 ---
 
-## 📁 Estrutura do Repositório
+## 🖥️ Executive Dashboard Preview
+
+---
+
+## 📁 Repository Structure
 
 ```text
 ambev-sales-analytics/
 │
-├── gerar_dados.py               # Script em Python responsável pela criação do dataset
-├── vendas_ambev_style.csv       # Base de dados estruturada (1.000 registros de vendas)
-├── queries_analise.sql          # Consultas SQL analíticas para suporte à decisão
-├── dashboard_vendas_ambev..pbip # Projeto e configurações do relatório no Power BI
-├── printdashboard.png           # Imagem/preview do dashboard em Dark Mode
-└── README.md                    # Documentação detalhada do projeto
+├── gerar_dados.py               # Python script responsible for generating the dataset
+├── vendas_ambev_style.csv       # Structured database (1,000 sales records)
+├── queries_analise.sql          # Analytical SQL queries for decision support
+├── dashboard_vendas_ambev..pbip # Power BI project and report configuration files
+├── printdashboard.png           # Image/preview of the dashboard in Dark Mode
+└── README.md                    # Detailed project documentation
 
 ```
 
 ---
 
-## 🚀 Como Executar o Projeto
+## 🚀 How to Run the Project
 
-Se você quiser reproduzir ou testar o ambiente localmente:
+If you want to reproduce or test the environment locally:
 
-1. **Clonar o repositório:**
+1. **Clone the repository:**
+
 ```bash
-git clone [https://github.com/matheuspaes777/ambev-sales-analytics.git](https://github.com/matheuspaes777/ambev-sales-analytics.git)
+git clone https://github.com/matheuspaes777/ambev-sales-analytics.git
 
 ```
 
+2. **Generate the dataset via Python:**
+Make sure you have Python installed with the `pandas` and `numpy` packages, then run:
 
-2. **Gerar a base de dados via Python:**
-Certifique-se de ter o Python instalado com as bibliotecas `pandas` e `numpy`, e execute:
 ```bash
 python gerar_dados.py
 
 ```
 
-
-3. **Explorar as Consultas Analíticas:**
-Abra o arquivo `queries_analise.sql` no seu gerenciador de banco de dados ou ferramenta de preferência compatível com SQLite/SQL.
-4. **Visualizar o Dashboard:**
-Abra o projeto do Power BI utilizando o Power BI Desktop para interagir com os filtros e indicadores visuais.
+3. **Explore Analytical Queries:**
+Open the `queries_analise.sql` file in your preferred database management tool compatible with SQLite/SQL.
+4. **View the Dashboard:**
+Open the Power BI project using Power BI Desktop to interact with the filters and visual metrics.
 
 ---
 
-## 👤 Autor
+## 👤 Author
 
-Desenvolvido por **Matheus Thiago Paes de Barros**
+Developed by **Matheus Thiago Paes de Barros**
 
-*Estudante de Bacharelado em Ciência da Computação — UNG*
-
+*Computer Science Student — UNG*
